@@ -1,0 +1,88 @@
+.logo{
+  justify-items: center;
+}
+
+.group{
+  margin-bottom: 2em;
+}
+
+.title{
+  margin-bottom: 0.8em;
+}
+
+/* .footer {
+  padding: 20px 0;
+  color: white;
+}
+
+.containerTop {
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 2em 5em;
+}
+
+.logo{
+  text-align: center;
+}
+
+.tagline{
+  font-size: 1.2em;
+  max-width: 55%;
+  text-align: start;
+  font-weight: 700;
+}
+
+.title{
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: beige;
+  margin-bottom: 2em;
+}
+
+.text{
+  text-transform: capitalize;
+  text-align: start;
+  margin-bottom: 1.5em;
+  margin-left: 2em;
+}
+
+.containerBottom {
+  margin-top: 2em;
+  padding: 2em 5em;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navItem a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.navItem a:hover {
+  color: #4caf50;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  margin: 0;
+} */

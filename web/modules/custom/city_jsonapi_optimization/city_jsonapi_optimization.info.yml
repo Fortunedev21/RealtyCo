@@ -1,0 +1,7 @@
+name: 'City JSONAPI Optimization'
+type: module
+description: 'Module to optimize JSON:API responses for city taxonomy terms.'
+package: Custom
+core_version_requirement: ^8 || ^9
+dependencies:
+  - jsonapi:jsonapi

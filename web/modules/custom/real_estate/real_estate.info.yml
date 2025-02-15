@@ -1,0 +1,5 @@
+name: 'Real Estate'
+type: module
+description: 'The real estatet module for the real estate'
+package: Custom
+core_version_requirement: ^8 || ^9

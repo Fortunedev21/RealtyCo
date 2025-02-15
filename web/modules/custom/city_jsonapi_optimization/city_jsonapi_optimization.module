@@ -1,0 +1,32 @@
+<?php
+
+use Drupal\jsonapi\JsonApiResource\ResourceObjectData;
+use Drupal\Core\Cache\CacheableMetadata;
+
+/**
+ * Implements hook_jsonapi_resource_object_data_alter().
+ *
+ * This hook is triggered whenever JSON:API sends a resource.
+ * You can alter the data sent back for taxonomy terms.
+ */
+function city_jsonapi_optimization_jsonapi_resource_object_data_alter(ResourceObjectData &$data, array $context)
+{
+  // Check if the resource is a taxonomy_term and the bundle is 'city'.
+  if ($data->getData() == 'taxonomy_term--city') {
+    // Filter fields or modify the response data.
+    $fields = $data->getData();
+
+    if ($fields) {
+      $filtered_fields = array_filter($fields, function ($field) {
+        // Example: Remove the field 'field_description' from the response.
+        return $field->getName() !== 'field_description';
+      });
+      $data->setFields($filtered_fields);
+    }
+
+    // Apply cache tags to make the response cacheable.
+    $cache_metadata = new CacheableMetadata();
+    $cache_metadata->setCacheTags(['taxonomy_term_list']);
+    $cache_metadata->applyTo($data);
+  }
+}
